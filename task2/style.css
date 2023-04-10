@@ -1,0 +1,31 @@
+.circule{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+.box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgb(12, 83, 12);
+    animation: radius 1s linear infinite;
+
+}
+.box:hover{
+    animation-play-state: paused;
+    background-color: green;
+}
+@keyframes radius{
+    0%{transform:  translate(-50%,-50%)scale(1) ;}
+    33%{transform: translate(-50%,-50%)scale(0.6) ;}
+    66%{transform:translate(-50%,-50%) scale(1.5) ;}
+    100%{
+ transform:translate(-50%,-50%) scale(1);
+    }
+}

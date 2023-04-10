@@ -1,0 +1,27 @@
+.circule{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+.box{
+    position: absolute;
+
+    transform: translate(90px,100px);
+    font-size: 30px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgb(12, 83, 12);
+    animation: radius 1s linear infinite;
+
+}
+
+@keyframes radius{
+    0%{transform:  translate(90px,100px)scale(1) ;}
+    33%{transform: translate(90px,100px)scale(0.6) ;}
+    66%{transform:translate(90px,100px) scale(1.5) ;}
+    100%{
+ transform:translate(100px,100px) scale(1);
+    }
+}
